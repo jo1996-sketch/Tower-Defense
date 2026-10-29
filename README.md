@@ -7,6 +7,21 @@ Wähle eine von fünf Fraktionen, stationiere und verbessere Truppen am Nebelpas
 und verteidige deine Bastion gegen wachsende Gegnerwellen. Spielstände werden
 zwischen Wellen lokal im Browser gespeichert.
 
+## Demo herunterladen
+
+Die spielbare Version 0.2.0 gibt es ohne Installation als fertigen Download:
+
+- [ZIP mit Demo und Kurzanleitung herunterladen](https://github.com/jo1996-sketch/JJ/raw/refs/heads/main/downloads/Bastion_Demo_0.2.0.zip)
+- [Einzelne HTML-Datei herunterladen](https://github.com/jo1996-sketch/JJ/raw/refs/heads/main/downloads/Bastion_Demo_0.2.0.html)
+
+ZIP herunterladen, entpacken und `Bastion_Demo_0.2.0.html` am Computer in
+Chrome, Edge, Firefox oder Safari öffnen. Bei einem privaten Repository musst du
+bei GitHub mit einem berechtigten Konto angemeldet sein. Auf iPhone/iPad kann die
+Dateivorschau das Spiel blockieren.
+
+`downloads/` enthält feste Download-Kopien dieser Version. Nach Änderungen am
+Spielcode müssen neue Download-Kopien ausdrücklich erzeugt werden.
+
 ## Entwickeln und spielen
 
 Voraussetzungen: **Node.js 24** (siehe `.nvmrc`) und **Python 3**. Das Spiel hat
@@ -56,6 +71,7 @@ kann JavaScript blockieren.
 | `tests/engine.test.js` | Elf Simulationstests |
 | `scripts/offline.mjs` | Erzeugung der Offline-Demo |
 | `docs/` | Originalanleitung, Spielkonzept und Grafikdokumentation |
+| `downloads/` | Spielbare Download-Kopien der Version 0.2.0 |
 
 `dist/` enthält in diesem Projekt den bearbeitbaren Spielcode und wird deshalb
 versioniert. Es ist kein austauschbarer Build-Ordner.
