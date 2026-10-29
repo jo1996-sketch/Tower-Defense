@@ -11,8 +11,8 @@ zwischen Wellen lokal im Browser gespeichert.
 
 Die spielbare Version 0.2.0 gibt es ohne Installation als fertigen Download:
 
-- [ZIP mit Demo und Kurzanleitung herunterladen](https://github.com/jo1996-sketch/JJ/raw/refs/heads/main/downloads/Bastion_Demo_0.2.0.zip)
-- [Einzelne HTML-Datei herunterladen](https://github.com/jo1996-sketch/JJ/raw/refs/heads/main/downloads/Bastion_Demo_0.2.0.html)
+- [ZIP mit Demo und Kurzanleitung herunterladen](https://github.com/jo1996-sketch/Tower-Defense/raw/refs/heads/main/downloads/Bastion_Demo_0.2.0.zip)
+- [Einzelne HTML-Datei herunterladen](https://github.com/jo1996-sketch/Tower-Defense/raw/refs/heads/main/downloads/Bastion_Demo_0.2.0.html)
 
 ZIP herunterladen, entpacken und `Bastion_Demo_0.2.0.html` am Computer in
 Chrome, Edge, Firefox oder Safari öffnen. Bei einem privaten Repository musst du
