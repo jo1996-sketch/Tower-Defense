@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#121d1c"><meta name="description" content="Wähle dein Reich. Errichte deine Verteidigung. Halte der Dämmerung stand. Ein originales Fantasy-Tower-Defense-Spiel.">
+  <title>Bastion · Dämmerwacht</title><link rel="icon" type="image/svg+xml" href="icon.svg"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="polish.css">
+</head>
+<body>
+<svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+  <symbol id="i-crown" viewBox="0 0 32 32"><path d="m5 10 5 5 6-10 6 10 5-5-3 16H8zM8 22h16"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 32 32"><path d="M26 5C7 3 2 15 9 23c7 7 20 0 17-18ZM6 28 24 8M11 21l1-9m6 3 7-1"/></symbol>
+  <symbol id="i-anvil" viewBox="0 0 32 32"><path d="M4 8h24l-5 7h-5v7l7 4H7l7-4v-7H8L3 11M15 4h11"/></symbol>
+  <symbol id="i-fang" viewBox="0 0 32 32"><path d="m6 5 8 6-4 15L6 16Zm20 0-8 6 4 15 4-10ZM13 8l3-4 3 4M13 24l3 5 3-5"/></symbol>
+  <symbol id="i-helm" viewBox="0 0 32 32"><path d="M7 26V13a9 9 0 0 1 18 0v13l-6-3v-7h-6v7zM16 3v10M5 12h22M11 26v3m10-3v3"/></symbol>
+  <symbol id="i-bow" viewBox="0 0 32 32"><path d="M8 4c21 4 21 20 0 24L18 16ZM3 16h24m-5-5 5 5-5 5"/></symbol>
+  <symbol id="i-swords" viewBox="0 0 32 32"><path d="M6 4h6l15 22-3 3L6 8ZM26 4h-6L5 26l3 3L26 8ZM3 20l9 7m8-1 8-6"/></symbol>
+  <symbol id="i-staff" viewBox="0 0 32 32"><path d="m9 29 10-19m-3-7 8 1 3 7-7 5-7-5ZM4 7h5M7 4v6m18 12h5m-2-3v6"/></symbol>
+  <symbol id="i-catapult" viewBox="0 0 32 32"><path d="M6 24h21L16 8Zm10-16 9-5 4 4-9 5M11 21 7 9H3m7 17v3m14-3v3"/><circle cx="8" cy="26" r="3"/><circle cx="25" cy="26" r="3"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 32 32"><path d="m16 3 11 5v8c0 6-6 10-11 13C11 26 5 22 5 16V8ZM16 9v14m-6-7h12"/></symbol>
+  <symbol id="i-coin" viewBox="0 0 32 32"><circle cx="16" cy="16" r="12"/><path d="m16 8 5 8-5 8-5-8Z"/></symbol>
+  <symbol id="i-wave" viewBox="0 0 32 32"><path d="m4 24 5-8 6 5 7-14 6 6M18 7h5v5M4 29h24"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 32 32"><path d="M5 16h22M19 8l8 8-8 8"/></symbol>
+  <symbol id="i-sound" viewBox="0 0 32 32"><path d="M5 12v8h6l7 6V6l-7 6Zm17-3c6 4 6 10 0 14m-1-10c2 2 2 4 0 6"/></symbol>
+  <symbol id="i-book" viewBox="0 0 32 32"><path d="M16 8C10 4 5 5 3 6v20c4-2 8-1 13 2 5-3 9-4 13-2V6c-3-1-7-2-13 2Zm0 0v20M7 11l5 1m-5 4 5 1m8-5 5-1m-5 6 5-1"/></symbol>
+</defs></svg>
+<header class="site-header">
+  <a class="brand" href="#" id="brand" aria-label="Bastion Hauptmenü"><svg class="brand-mark"><use href="#i-shield"/></svg><span>BASTION<small>D Ä M M E R W A C H T</small></span></a>
+  <span class="prototype"><i></i> SPIELBARE DEMO <span>0.2</span></span>
+  <nav aria-label="Spieloptionen"><button class="text-button focus-button" id="focus-toggle" aria-pressed="false" hidden><span class="focus-glyph">⛶</span><span>Großansicht</span></button><button class="icon-button" id="sound" aria-label="Ton einschalten" title="Ton einschalten"><svg><use href="#i-sound"/></svg><span class="sound-off"></span></button><button class="text-button" id="guide" aria-label="Spielwissen"><svg><use href="#i-book"/></svg><span>Spielwissen</span></button></nav>
+</header>
+<main>
+<section id="menu" class="menu">
+  <div class="menu-scenery" aria-hidden="true"></div>
+  <div class="menu-embers" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="menu-intro"><p class="eyebrow"><span></span> DEIN REICH. DEINE VERTEIDIGUNG. <span></span></p><h1>Die Dämmerung kommt.<br><em>Deine Bastion bleibt.</em></h1><p class="intro-copy">Die Dämmerung rückt näher. Wähle dein Volk, stelle deine Truppen auf<br class="desktop-break"> und halte den endlosen Wellen der Verlorenen stand.</p></div>
+  <div class="choose-label"><span>01 <b>WÄHLE DEIN REICH</b></span><span>Fünf Völker. Fünf Spielweisen.</span></div>
+  <div class="faction-grid" id="faction-grid" role="group" aria-label="Fraktion wählen"></div>
+  <div class="faction-detail"><span id="faction-lore"></span><strong id="faction-bonus"></strong></div>
+  <div class="menu-actions"><button class="primary" id="start">Bastion verteidigen <svg><use href="#i-arrow"/></svg></button><button id="continue" class="secondary" hidden>Spiel fortsetzen</button><span class="menu-note"><svg><use href="#i-shield"/></svg> Einführung im Spiel · Kein Konto nötig</span></div>
+  <div class="menu-bottom"><span>ORIGINALE FANTASYWELT · SOLO · TOWER DEFENSE</span><span id="menu-record">Deine Geschichte beginnt mit Welle 1.</span></div>
+</section>
+<section class="game" id="game" hidden>
+  <div class="battle-heading"><div><p class="eyebrow">DIE GRENZLANDE <span> / </span> KARTE 01</p><h1>Der Nebelpass <span id="faction-label"></span></h1></div><div class="battle-stats"><div class="stat gold"><svg><use href="#i-coin"/></svg><span><small>GOLD</small><b id="gold">280</b></span></div><div class="stat"><svg><use href="#i-shield"/></svg><span><small>BASTION</small><b id="lives">25<span>/25</span></b></span></div><div class="stat"><svg><use href="#i-wave"/></svg><span><small>WELLE</small><b id="wave">1 <span>/ ∞</span></b></span></div></div></div>
+  <div class="battle-layout"><div class="battle-main">
+    <div class="map-wrap" id="map-wrap"><canvas id="map" width="1280" height="700" aria-label="Schlachtfeld. Die Bauplätze sind als Schaltflächen erreichbar."></canvas><div id="slot-layer" class="slot-layer" aria-label="Bauplätze"></div>
+      <div class="map-title"><span class="map-coord">N 48° · O 16°</span><span>NEBELPASS</span><small>Der letzte Weg zur Bastion</small></div>
+      <div class="map-status"><i id="status-dot"></i><span id="map-status">Vorbereitung</span></div>
+      <div class="map-hud" aria-label="Kampfstatus"><span><svg><use href="#i-coin"/></svg><b id="mini-gold">280</b></span><span><svg><use href="#i-shield"/></svg><b id="mini-lives">25/25</b></span><span><svg><use href="#i-wave"/></svg><b id="mini-wave">1</b></span></div>
+      <div class="map-compass" aria-hidden="true"><span>N</span><svg viewBox="0 0 60 60"><path d="M30 5 36 24 55 30 36 36 30 55 24 36 5 30 24 24Z" fill="none" stroke="currentColor"/><path d="m30 13 5 17-5 17-5-17Z" fill="currentColor"/></svg></div>
+      <div class="map-toast" id="map-toast" role="status"></div><div class="paused-banner" id="paused-banner" hidden><span>Ⅱ</span> PAUSE</div>
+    </div>
+    <div class="command-bar"><div class="command-title"><span class="eyebrow">DEINE VERTEIDIGUNG</span><span>Truppe wählen → Bauplatz antippen</span></div><div class="unit-cards" id="unit-cards" role="group" aria-label="Truppe wählen"></div></div>
+  </div>
+  <aside class="battle-sidebar"><div class="advisor panel"><div class="panel-label"><span class="advisor-gem">✦</span><span>DER KRIEGSRAT</span><span id="tutorial-count">01 / 05</span></div><h2 id="tutorial-title">Besetze den Pass.</h2><p id="tutorial-copy">Wähle unten die Fernkämpfer und tippe auf einen leuchtenden Bauplatz neben dem Weg.</p><div class="tutorial-track"><i></i><i></i><i></i><i></i><i></i></div><button id="tutorial-dismiss" class="subtle">Einführung ausblenden</button></div>
+    <div class="selection panel" id="selection"><div class="panel-label">BAUPLATZ <span id="selected-slot">—</span></div><div id="selection-content"><div class="empty-selection"><svg><use href="#i-helm"/></svg><h2>Ein guter Standort<br>entscheidet die Schlacht.</h2><p>Wähle einen Bauplatz auf der Karte, um Truppen zu stationieren.</p></div></div></div>
+    <button class="spell-button" id="spell" aria-pressed="false" disabled><span class="spell-icon">✦</span><span><b>Bastionsfeuer</b><small>Flächenschaden · 40 s Abklingzeit</small></span><strong id="spell-status">Ab Welle 1</strong></button>
+    <div class="wave-panel panel"><div class="panel-label"><span id="attack-preview-title">NÄCHSTER ANGRIFF</span><span id="next-wave-label">01</span></div><div class="wave-preview" id="wave-preview"></div><div class="wave-actions"><button class="primary" id="send-wave">Welle 1 starten <svg><use href="#i-arrow"/></svg></button><button class="control" id="pause" aria-label="Spiel pausieren" title="Pause (Leertaste)">Ⅱ</button><button class="control" id="speed" aria-label="Doppelte Spielgeschwindigkeit">1×</button></div><label class="auto-wave"><input type="checkbox" id="auto-wave"><span>Wellen automatisch starten</span></label><p class="checkpoint" id="checkpoint">Spielstand wird zwischen Wellen gespeichert.</p></div>
+  </aside></div>
+  <button id="exit-focus" class="exit-focus">⛶ Ansicht verlassen <kbd>Esc</kbd></button>
+  <div class="battle-footer"><span id="faction-passive"></span><span><kbd>1</kbd>–<kbd>4</kbd> Truppen &nbsp; <kbd>Leertaste</kbd> Pause &nbsp; <kbd>Q</kbd> Bastionsfeuer &nbsp; <kbd>Esc</kbd> Auswahl lösen</span><button id="menu-button" class="subtle">Zum Hauptmenü</button></div>
+</section>
+</main>
+<dialog id="guide-dialog"><button class="close-dialog" aria-label="Schließen">×</button><p class="eyebrow">DAS FELDHANDBUCH</p><h2>Halte den Pass.</h2><p>Die Verlorenen folgen dem hellen Weg von links zur Bastion. Jeder durchgebrochene Gegner kostet Festungsleben. Bei 0 ist der Lauf vorbei.</p><div class="guide-grid"><div><b>01 · Rekrutieren</b><p>Wähle eine Truppe und danach einen freien Bauplatz. Der Kreis zeigt ihre Reichweite. Die Truppen greifen selbstständig an.</p></div><div><b>02 · Kombinieren</b><p>Nahkämpfer verlangsamen, Fernkämpfer treffen schnell, Magier ignorieren Rüstung und Katapulte treffen Gruppen.</p></div><div><b>03 · Verbessern</b><p>Tippe auf eine stationierte Truppe. Verbessere sie bis Stufe V oder verkaufe sie für 70 % deiner Investition.</p></div><div><b>04 · Durchhalten</b><p>Besiegte Gegner und abgeschlossene Wellen bringen Gold. Alle fünf Wellen kommt ein Torbrecher. Es gibt keine festgelegte letzte Welle.</p></div></div><div class="guide-note"><b>Dein Spielstand</b><p>Der letzte abgeschlossene Wellenstand bleibt auf diesem Gerät gespeichert. Ein unterbrochener Angriff beginnt erneut. Ton wird erst nach dem Einschalten abgespielt.</p></div><div class="guide-note"><b>Bastionsfeuer</b><p>Während einer Welle die Fähigkeit oder Q wählen und danach das Ziel auf der Karte antippen. Der Einschlag ignoriert Rüstung und trifft Gegner im markierten Bereich. Nach 40 Sekunden Kampfzeit ist der nächste Angriff bereit. Großansicht vergrößert das Schlachtfeld.</p><label class="effects-option"><input type="checkbox" id="effects-toggle" checked> Zusätzliche Partikel, Nebel und Kamerabewegung</label></div><p class="guide-footnote">Demo 0.2 · Eine Karte · Fünf Fraktionen · Vier Truppentypen je Fraktion.<br>Eigenständige Fantasywelt. Keine Verbindung zu bestehenden Film- oder Spielmarken.</p><button class="primary close-guide">Verstanden <svg><use href="#i-arrow"/></svg></button></dialog>
+<dialog id="result-dialog"><div class="result-emblem"><svg><use href="#i-shield"/></svg></div><p class="eyebrow">DIE CHRONIK DEINES REICHES</p><h2>Die Bastion ist gefallen.</h2><p>Doch jeder Widerstand hinterlässt eine Geschichte.</p><div class="result-stats"><div><span id="result-wave">0</span><small>WELLEN ABGEWEHRT</small></div><div><span id="result-kills">0</span><small>GEGNER BESIEGT</small></div><div><span id="result-gold">0</span><small>GOLD VERDIENT</small></div></div><p id="record-label"></p><div class="result-buttons"><button class="primary" id="retry">Erneut verteidigen</button><button class="secondary" id="choose-again">Reich wechseln</button></div></dialog>
+<dialog id="leave-dialog"><p class="eyebrow">ZURÜCK ZUM KRIEGSRAT</p><h2>Diesen Lauf verlassen?</h2><p>Du kannst später beim letzten gespeicherten Wellenstand weiterspielen. Ein laufender Angriff wird dann erneut gestartet.</p><div class="result-buttons"><button class="primary" id="leave-confirm">Hauptmenü öffnen</button><button class="secondary" id="leave-cancel">Weiterspielen</button></div></dialog>
+<div class="sr-only" id="announcer" aria-live="polite"></div>
+<noscript><p>Bitte JavaScript aktivieren, um Bastion zu spielen.</p></noscript>
+<script type="module" src="game.js?v=0.2"></script>
+</body></html>

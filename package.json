@@ -1,0 +1,8 @@
+{
+  "name": "bastion-daemmerwacht",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Original fantasy tower defense playable prototype",
+  "scripts": { "test": "node --test tests/engine.test.js", "offline": "node scripts/offline.mjs" }
+}

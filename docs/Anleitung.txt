@@ -1,0 +1,57 @@
+﻿Bastion · Dämmerwacht
+
+Spielbare Tower-Defense-Demo 0.2.0 · 22. Oktober 2026
+
+Was sich verändert hat
+
+Neue atmosphärische Landschaft mit Wald, Wasserfällen, Klippen und Festung; detaillierte Charakterporträts; transparente Spielfiguren für Menschen, Elben, Zwerge und Orks; dunklere Eisen-Varianten; Schatten, bewegte Figuren, Waffenrückstoß, Pfeile, Frostmagie, Einschläge, Funken, Nebel und Schadensanzeigen. Die Oberfläche verwendet größere Einheitenbilder, neue Karten und eine optionale Großansicht.
+
+Die Umsetzung nutzt hochauflösende 2D-Bildwelten und prozedural bewegte Sprites mit räumlicher Wirkung (2.5D). Die Grafiken sind keine Echtzeit-3D-Modelle. Alle fünf Fraktionsboni und bisherigen Spielregeln bleiben erhalten.
+
+Neu ist Bastionsfeuer: während einer Welle die Fähigkeit oder Q wählen, danach das Ziel auf der Karte antippen. Der Flächenangriff ignoriert Rüstung. Abklingzeit: 40 Sekunden aktiver Kampfzeit, im Checkpoint mitgespeichert.
+
+Sofort spielen
+
+Bastion_Demo_Offline.html in Chrome, Edge, Firefox oder Safari öffnen. Sie enthält das ganze Spiel einschließlich der Bilder. Auf einem Computer genügt ein Doppelklick. Auf iPhone/iPad kann die Dateivorschau JavaScript blockieren; dort den Spiel-Link in Safari verwenden.
+
+Fraktion wählen, „Bastion verteidigen“ drücken, unten eine Truppe und danach einen runden Bauplatz wählen. Die erste Welle über die rechte Seitenleiste starten. Truppen greifen automatisch an. Eine stationierte Truppe antippen, um sie zu verbessern oder zu verkaufen.
+
+Tasten: 1–4 Truppen, Leertaste Pause, Q Bastionsfeuer, Escape Auswahl beziehungsweise Großansicht verlassen. Ton ist anfangs ausgeschaltet. Bei Tabwechsel pausiert das Spiel. Zusätzliche Bewegungseffekte lassen sich im Feldhandbuch ausschalten; reduzierte Bewegung des Betriebssystems wird berücksichtigt.
+
+Zwischen Wellen wird lokal gespeichert. „Spiel fortsetzen“ lädt den letzten Checkpoint. Ein laufender Angriff beginnt erneut; Änderungen innerhalb der abgebrochenen Welle sind nicht gespeichert. Spielstände aus 0.1 bleiben lesbar. Browser und Geräte teilen den Speicher nicht automatisch.
+
+Spielumfang
+
+- Fünf Fraktionen mit eigenem Spielbonus und eigener Darstellung.
+- Eine Karte mit zwölf Bauplätzen und einem Weg bis zum sichtbaren Festungstor.
+- Fernkampf, Nahkampf, Magie und Belagerung; fünf Verbesserungsstufen.
+- Gold, Verkauf mit 70 % Rückvergütung, Boss alle fünf Wellen.
+- Wellen ohne festes Finale, Einführung, Rekord und optionale automatische Wellen.
+- Bastionsfeuer, Pause, Zeitraffer und Großansicht mit Gold-/Lebens-/Wellenanzeige.
+- Lokal gebündelte Bilder und synthetisierte Toneffekte. Keine Konten oder Analyse-SDKs im Spielcode. Das private Hosting hat eine eigene Zugangskontrolle.
+
+Projektstruktur
+
+Datei: dist/index.html | Inhalt: Spieloberfläche
+Datei: dist/style.css, dist/polish.css | Inhalt: Layout und Gestaltung
+Datei: dist/engine.js | Inhalt: Fraktionen, Balancing und deterministische Simulation
+Datei: dist/game.js | Inhalt: Bedienung, Audio, Speicherung und Ablauf
+Datei: dist/renderer.js | Inhalt: Hochauflösende 2.5D-Darstellung und Effekte
+Datei: dist/assets/ | Inhalt: WebP-Grafiken und transparente Atlanten
+Datei: tests/engine.test.js | Inhalt: Elf Simulationstests
+Datei: scripts/offline.mjs | Inhalt: Erzeugt die einzelne Offline-HTML-Datei
+Datei: Grafik_Konzept_und_Bildprompts.txt | Inhalt: Bildherkunft und vollständige Produktionsprompts
+
+Lokal entwickeln
+
+Den Ordner dist über einen lokalen Webserver bereitstellen, beispielsweise mit python3 -m http.server 8080 --directory dist. Dann http://localhost:8080 öffnen. Die Quellversion verwendet ES-Module. Für direktes Öffnen per file:// die Offline-Datei verwenden.
+
+Tests: npm test oder node --test tests/engine.test.js. Keine npm-Abhängigkeiten. Offline-Datei erneuern: node scripts/offline.mjs mit einer Node.js-Version, die import.meta.dirname unterstützt. Alle Grafiken werden dabei als Daten-URLs eingebettet.
+
+Validierung und Grenzen
+
+Elf automatisierte Tests prüfen Fraktionen, erste Wellen, Sieg/Niederlage, Wirtschaft und Upgrades, Rüstung, Magie, Verlangsamung, Flächenschaden, Spielstände, große Wellen, verschiedene Zeitschritte und Bastionsfeuer einschließlich Abklingzeit. Zusätzlich werden Darstellung und Bedienung im Browser geprüft. Native iPhone-Tests stehen aus.
+
+Das Projekt ist eine Browserdemo. Es enthält noch keine native iOS-App, Signierung oder App-Store-Einreichung, keine Kampagne oder Helden. Das Balancing wird mit längeren Läufen weiterentwickelt. Nahkämpfer bremsen Feinde im Umkreis und haben noch keine eigenen Lebenspunkte. Truppen sind bis Stufe V verbesserbar; endlose Wellengenerierung garantiert kein unbegrenztes Überleben. Eisenschwur nutzt dunklere Varianten der Orkfiguren, keine vollständig separate Animationssammlung.
+
+Eigenständige Fantasywelt. Der endgültige Spieltitel ist noch nicht auf Markenverfügbarkeit geprüft. Sämtliche neuen Bilder wurden speziell für dieses Projekt mit der integrierten Bildgenerierung erstellt und als WebP gebündelt. Produktionsprompts und finale Dateizuordnung stehen in Grafik_Konzept_und_Bildprompts.txt.

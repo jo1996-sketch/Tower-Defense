@@ -1,0 +1,15 @@
+﻿BASTION DÄMMERWACHT – HIER STARTEN
+
+1. Diese ZIP-Datei vollständig entpacken: Rechtsklick, Alle extrahieren.
+2. Bastion_Demo_Offline.html doppelt anklicken. Das Spiel öffnet sich im Browser.
+3. Für den Entwicklungsauftrag Bastion_Masterprompt.docx in Word oder Bastion_Masterprompt.txt im Windows-Editor öffnen.
+4. Im Masterprompt den Abschnitt „Masterprompt zum Kopieren“ bis einschließlich „Dein nächster Auftrag“ in ChatGPT kopieren. Dieses gesamte ZIP-Paket als Projektgrundlage beilegen.
+5. Konkrete Änderungswünsche dazuschreiben.
+
+Der überarbeitete Masterprompt verlangt ausdrücklich bestmögliche zeitgemäße Grafikqualität. Er beschreibt Landschaften, Figuren, Animationen, Beleuchtung, Effekte, Oberfläche und flüssige Darstellung.
+
+Anleitung.txt erklärt die Bedienung und Entwicklung. Grafik_Konzept_und_Bildprompts.txt enthält die vollständigen Bildprompts. dist, scripts und tests enthalten Quellcode, Grafiken, Hilfsskript und Tests. Diese Dateien müssen zum Spielen nicht einzeln geöffnet werden.
+
+Das Paket basiert auf Spielversion 0.2. Die Änderung betrifft die Dokumentation und den Masterprompt. Es ist noch keine native iPhone-App.
+
+Spiel im Browser: https://bastion-daemmerwacht-jj.jo1996417883.chatgpt.site

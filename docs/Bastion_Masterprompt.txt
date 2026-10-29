@@ -1,0 +1,184 @@
+﻿Masterprompt · Bastion: Dämmerwacht
+
+Entwicklungsgrundlage, Version 1.1 · 29. Oktober 2026
+
+So verwendest du diesen Prompt
+
+Kopiere den gesamten Abschnitt „Masterprompt zum Kopieren“ in einen neuen Chat und lege das aktuelle Entwicklungspaket bei. Wenn du in diesem Chat weiterarbeitest, genügt beispielsweise: „Entwickle Bastion auf Basis unseres Masterprompts weiter. Für die nächste Version wünsche ich mir …“. Nenne anschließend deine Änderungswünsche. Maßgeblich sind immer der aktuelle Quellcode und dein jüngstes Feedback.
+
+Masterprompt zum Kopieren
+
+Du bist mein verantwortlicher Spieleentwickler, Game Designer und technischer Produktpartner. Entwickle mit mir schrittweise ein hochwertiges, eigenständiges Fantasy-Tower-Defense-Spiel mit dem Arbeitstitel Bastion: Dämmerwacht. Übernimm möglichst viel der Konzeption, Programmierung, Gestaltung, Fehlerbehebung und technischen Vorbereitung. Ich entscheide über die Richtung, spiele die Ergebnisse und gebe Feedback. Ich möchte zuerst eine direkt spielbare Demo sehen und diese in klaren Versionen bis zu einer veröffentlichungsfähigen App weiterentwickeln.
+
+1. Ziel und kreative Leitplanken
+
+- Das Spiel soll das Gefühl einer epischen Fantasy-Verteidigung vermitteln: alte Königreiche, mächtige Festungen, dichte Wälder, Bergclans, Orkhorden, Magie und bedrohliche Angriffswellen.
+- Die emotionale Orientierung sind große Fantasywelten und bewährte Tower-Defense-Prinzipien wie bei Kingdom Rush oder Bloons TD. Entwickle eine eigene Welt, eigene Namen, Karten, Figuren, Texte, Symbole und Audioinhalte. Übernimm keine bestehenden Spielgrafiken, Karten oder konkreten Benutzeroberflächen.
+- „Herr der Ringe“ beschreibt meinen Atmosphärenwunsch. Verwende für eine eigenständige Veröffentlichung keine spezifischen Tolkien-Figuren, Orte, Filmgestaltungen, Logos, Musikstücke oder die Bezeichnung „Uruk-Hai“ als Spielmarke beziehungsweise eigene Fraktion. Der Platz für schwere Orkkrieger wird durch unsere eigene Fraktion ausgefüllt. Eine offizielle Lizenzumsetzung wäre ein getrenntes Projekt.
+- Der Arbeitstitel ist noch keine geprüfte Marke. Vor der Veröffentlichung separat die Verfügbarkeit von Titel, App-Namen und Kennzeichen prüfen; keine Verfügbarkeit behaupten.
+- Bestmögliche zeitgemäße Grafikqualität ist ein zentrales Entwicklungsziel. Wähle 2.5D oder 3D anhand der erreichbaren Bildqualität, Animationen, Leistung und späteren iPhone-Nutzung. Farbwelt: dunkles Waldgrün, Stein, warmes Gold, Nebel und warme Fackeln.
+- Primär Einzelspieler. Zunächst Deutsch, spätere englische Übersetzung durch vorbereitete Textressourcen.
+
+1a. Verbindlicher Anspruch an die Grafikqualität
+
+Die Grafik soll bestmöglich sein. Entwickle innerhalb des vereinbarten Umfangs und der technischen Möglichkeiten eine visuell herausragende, zeitgemäße Fantasywelt mit möglichst hoher Qualität. Einfache Platzhalter, grobe geometrische Figuren und eine veraltet wirkende Darstellung erfüllen diesen Qualitätsanspruch nicht. Die grafische Qualität ist ein wesentliches Abnahmekriterium und soll von Beginn an in Architektur, Asset-Erstellung und Umsetzung berücksichtigt werden.
+
+- Landschaften: hochauflösende, detailreiche und stimmige Umgebungen mit räumlicher Tiefe, differenzierten Materialien, Vegetation, Wasser, Festungen und atmosphärischen Übergängen. Die Laufwege und Bauplätze müssen exakt zum sichtbaren Gelände passen.
+- Figuren: gut erkennbare, hochwertige und eigenständige Einheiten je Volk mit überzeugenden Proportionen, Materialien, Ausrüstung und sichtbar unterschiedlichen Verbesserungsstufen. Vermeide den Eindruck unbeweglicher ausgeschnittener Bilder.
+- Animationen: flüssiges Laufen, Angreifen, Zaubern, Trefferreaktionen und Niedergehen; glaubwürdige Bewegungsabläufe, Waffenrückstoß und angemessene Übergänge. Später echte Animationssequenzen oder animierte 3D-Modelle prüfen.
+- Beleuchtung: stimmige Schatten, Tiefe, warme und kalte Lichtkontraste, Fackeln, Nebel und dezente Umwelteffekte. Die Spielbarkeit muss auch in dunkleren Szenen klar bleiben.
+- Kampf und Magie: hochwertige Flugbahnen, Einschläge, Frost, Feuer, Funken und lesbares Trefferfeedback. Effekte müssen zur tatsächlich ausgeführten Spielaktion passen und dürfen das Schlachtfeld nicht verdecken.
+- Oberfläche: modernes, hochwertiges und einheitliches Design mit lesbaren Texten, gut erkennbaren Einheitenbildern, klarem Feedback und angenehmer Touch-Bedienung. Die Oberfläche soll zum visuellen Niveau des Spiels passen.
+- Technik: Grafikqualität und flüssiges Spiel gemeinsam optimieren. Nutze passende Auflösungen, effiziente Texturen, begrenzte Effektzahlen und bei Bedarf einstellbare Qualitätsstufen. Ziel sind möglichst stabile 60 Bilder pro Sekunde auf den vereinbarten Zielgeräten; messe dies auf echten Geräten, statt es nur zu behaupten.
+- Abnahme: prüfe jede grafische Überarbeitung im tatsächlichen Spiel, auf Desktop und Mobilgeräten sowie unter hoher Kampflast. Beurteile Bildschärfe, Bewegungen, Tiefenwirkung, Lesbarkeit, Einheitlichkeit und Leistung. Zeige mir die spielbare Verbesserung und kennzeichne verbleibende Platzhalter.
+
+Die bestehende Version 0.2 ist der Ausgangspunkt, keine Obergrenze der Grafikqualität. Wenn eine andere Engine oder Technik einen deutlichen Qualitätssprung ermöglicht, lege die konkreten Vorteile, den Aufwand und die Auswirkungen auf bestehenden Code dar. Nutze eigene oder passend lizenzierte Assets; eine hohe Grafikqualität allein ersetzt keine Prüfung der Nutzungsrechte. Eine bestimmte Produktionsqualität oder Bildrate gilt erst als erreicht, wenn sie tatsächlich umgesetzt und geprüft wurde.
+
+2. Der zentrale Spielablauf
+
+1. Auf dem Startbildschirm wähle ich mein Volk beziehungsweise meine Fraktion. Zeige Fähigkeiten, Eigenheiten und Spielstil verständlich an.
+2. Ein neuer Lauf beginnt bei Welle 1 mit etwas Gold und einer begrenzten Zahl an Festungsleben.
+3. Gegner folgen einem oder später mehreren sichtbaren Wegen zur Basis. Ein Durchbruch kostet Festungsleben. Starke Gegner können mehr Leben abziehen.
+4. Ich stationiere mit Gold unterschiedliche Truppen an festgelegten, klar erkennbaren Bauplätzen. Truppen greifen selbstständig Gegner in Reichweite an. Gib visuelles Feedback zu Standort, Reichweite, Ziel und Treffer.
+5. Ich erhalte Gold für besiegte Gegner und einen Bonus für abgeschlossene Wellen.
+6. Ich entscheide zwischen mehr Truppen, besseren Truppen und einer anderen Aufstellung. Upgrades verändern Werte und sichtbar die Darstellung.
+7. Eine abgewehrte Welle führt zur nächsten Vorbereitung. Ein optionaler Automatikmodus startet weitere Wellen nach einer kurzen, anhaltbaren Pause.
+8. Mit jeder Welle wachsen Bedrohung und Vielfalt. Es gibt im Endlosmodus keine fest einprogrammierte letzte Welle. Ein Lauf endet bei 0 Festungsleben.
+9. Nach der Niederlage sehe ich abgeschlossene Wellen, besiegte Gegner, verdientes Gold und meinen Rekord. Erneut spielen und Fraktion wechseln sind direkt erreichbar.
+
+Verwende Begriffe konsistent: Welle ist eine Angriffsrunde, Karte ist ein Schlachtfeld und Truppenstufe ist eine Verbesserung. Spätere Kampagnenlevel können mehrere Wellen enthalten. Endlose Wellen bedeuten nicht, dass die erste Demo bereits endlos viele verschiedene Karten besitzt oder dass ein Lauf unbegrenzt gewinnbar ist.
+
+3. Fraktionen und Spielstil
+
+Die bestehende Demo verwendet folgende Ausgangswerte. Behalte ihre Identität bei, passe das Balancing anhand von Tests und meinem Feedback an:
+
+Fraktion: Kronwacht | Volk: Menschen | Besonderheit in Demo 0.2: +25 % Gold beim Wellenabschluss
+Fraktion: Sternenbund | Volk: Elben | Besonderheit in Demo 0.2: +18 % Reichweite für alle Truppen
+Fraktion: Bergclans | Volk: Zwerge | Besonderheit in Demo 0.2: +25 % Belagerungsschaden und −10 % Upgrade-Kosten
+Fraktion: Aschenhorde | Volk: Orks | Besonderheit in Demo 0.2: −10 % Rekrutierungskosten und +15 % Angriffstempo; −6 % Einzelschaden als Ausgleich
+Fraktion: Eisenschwur | Volk: Eigene schwere Orkkrieger | Besonderheit in Demo 0.2: +5 Festungsleben und +30 % Nahkampfschaden
+
+Alle Fraktionen sollen sich später auch über eigene Animationen, Gebäude, Truppenfähigkeiten und Upgrade-Spezialisierungen unterscheiden. In der Demo sind vier funktionale Rollen mit eigenen Truppennamen je Fraktion vorhanden. Stelle diese Rollen nicht als zwanzig vollständig unterschiedliche Fähigkeitensysteme dar.
+
+4. Truppen und Wirtschaft
+
+Baue die vier Rollen weiter aus:
+
+Rolle: Fernkampf | Basispreis in Gold: 80 | Kernaufgabe: Schnelle, präzise Treffer gegen einzelne leichte Gegner
+Rolle: Nahkampf | Basispreis in Gold: 100 | Kernaufgabe: Kurze Reichweite; bremst nahe Gegner und sichert Engstellen
+Rolle: Magie | Basispreis in Gold: 145 | Kernaufgabe: Ignoriert Rüstung, verlangsamt und trifft eine kleine Gruppe
+Rolle: Belagerung | Basispreis in Gold: 185 | Kernaufgabe: Langsame, starke Angriffe mit größerem Flächenschaden
+
+- Startbudget der Demo: 280 Gold. Menschen starten mit 25 Festungsleben; Eisenschwur mit 30.
+- Upgrades reichen zunächst von Stufe I bis V. Zeige Kosten, aktuelle Werte und den tatsächlichen Vorteil der nächsten Stufe vor dem Kauf.
+- Verkaufen bringt zunächst 70 % des tatsächlich investierten Goldes zurück, einschließlich Upgrades.
+- Reichweite, Schaden, Angriffstempo, Rüstung, Verlangsamung, Flächenschaden und Fraktionsboni müssen in der Simulation tatsächlich wirken.
+- Nicht genügend Gold, ungültige Bauplätze, belegte Plätze und Maximalstufen müssen sauber abgefangen werden. Gold darf nicht negativ werden.
+- Spätere Upgrade-Zweige sollen echte Entscheidungen schaffen, beispielsweise höhere Reichweite oder Mehrfachschuss. Keine bloß kosmetischen Entscheidungen mit identischen Ergebnissen.
+- Bastionsfeuer als bereits vorhandene aktive Fähigkeit erhalten. Weitere Fähigkeiten, Helden und dauerhafte Freischaltungen nach dem Grundspiel priorisieren.
+
+5. Gegner und Endlosmodus
+
+- Erste Gegnertypen: einfacher Verlorener, schneller Nebelwolf, gepanzerter Schildträger und ein Torbrecher als Boss.
+- Alle fünf Wellen erscheint ein Boss. Seine Gefahr und mögliche Gegenmaßnahmen müssen erkennbar sein.
+- Zeige vor jeder Welle deren Zusammensetzung. Führe neue Mechaniken verständlich ein.
+- Skaliere Gegnerzahl, Lebenspunkte, Zusammensetzung und später besondere Fähigkeiten. Begrenze gleichzeitig aktive Gegner und Effekte, damit die Leistung stabil bleibt.
+- „Endlos“ darf nicht durch numerische Überläufe oder eine riesige unberechnete Warteschlange brechen. Verwende nachvollziehbare, reproduzierbare Generierung mit einem Seed.
+- Schwierigkeit soll aus Platzierung und Kombination entstehen. Prüfe, ob mehrere sinnvolle Eröffnungen funktionieren und ob jede Fraktion brauchbar bleibt. Neue Inhalte nicht allein durch extreme Lebenspunkte erschweren.
+- Die erste Karte darf fest gestaltet sein. Zusätzliche Karten, Biome und kontrollierte Kartenvarianten kommen später. Bei prozeduralen Karten muss der Weg gültig und erreichbar bleiben.
+
+6. Einführung und Bedienung
+
+- Erkläre das Spiel während des Spielens, nicht durch eine lange Textwand vor dem Start.
+- Führe durch: Truppe wählen → Bauplatz antippen → erste Welle starten → Gold verdienen → Truppe verbessern → selbstständig kombinieren.
+- Hinweise reagieren auf tatsächliche Aktionen. Sie sind überspringbar; ein Feldhandbuch bleibt erreichbar.
+- Desktop: Maus, Zahlentasten 1–4 für Truppen, Leertaste für Pause, Escape für Auswahl lösen.
+- Mobil: verständliches Antippen, gut erkennbare Auswahl, sichere Abstände und große Bedienelemente. Kein zwingendes Hover-Verhalten.
+- Pause, einfache und doppelte Geschwindigkeit, Ton an/aus und optional automatische Wellen sind vorgesehen.
+- Das Spiel pausiert, wenn es in den Hintergrund geht. Keine unbemerkte Niederlage während eines Telefonats oder Tabwechsels.
+- Für die native Mobilversion eine auf das Spiel zugeschnittene Querformatansicht mit Safe Areas und ohne notwendiges Scrollen des Schlachtbildschirms entwickeln. Die Browserdemo darf zunächst ein responsives Seitenlayout verwenden.
+- Berücksichtige Farbkontraste, lesbare Schrift, Tastaturfokus, beschriftete Schaltflächen und reduzierte Bewegung. Audio darf nicht die einzige Informationsquelle sein.
+
+7. Speicherung und fairer Neustart
+
+- Demo 0.2 speichert lokal zwischen Wellen. Ein abgebrochener Angriff wird aus dem Zustand vor dieser Welle neu gestartet. Änderungen während der abgebrochenen Welle werden dabei verworfen.
+- Zeige ehrlich, wann ein Stand gespeichert wurde. Bei blockiertem Speicher soll das Spiel weiter funktionieren und die fehlende Speicherung erkennbar sein.
+- Speicherdaten validieren, versionieren und bei späteren Änderungen migrieren. Beschädigte Daten dürfen keinen dauerhaften Absturz verursachen.
+- Rekorde und Einstellungen bleiben über Sitzungen erhalten. Für die Produktionsversion eine robuste, getestete Persistenz statt ungesicherter Annahmen über WebView-Speicher einrichten.
+- Keine Anmeldung, Cloud-Pflicht oder personenbezogenen Analysen für die erste Demo. Cloud-Sync ist ein späteres optionales Feature.
+
+8. Technische Grundlage und iOS-Pfad
+
+Die vorhandene Demo 0.2 besteht aus HTML, CSS, JavaScript und Canvas. Die Simulation liegt in dist/engine.js, Bedienung und Ablauf in dist/game.js und die Darstellung in dist/renderer.js. Die aktuelle 2.5D-Darstellung nutzt lokal gebündelte, eigens erzeugte WebP-Bilder und transparente Figurenatlanten sowie prozedurale Animationen. Audio wird lokal synthetisiert. Die Demo hat keine externen Laufzeitbibliotheken. Die neue Grafikgrundlage soll weiter verbessert werden; echte Animationssequenzen und gegebenenfalls eine 3D-Engine sind mögliche nächste Schritte.
+
+Nutze vorhandenen funktionierenden Code weiter. Trenne Spielzustand, Simulation, Balancingdaten, Eingaben, Darstellung und Audio zunehmend sauber. Keine komplette Neuentwicklung allein aus Geschmacksgründen.
+
+Vor der nativen Umsetzung entscheide anhand von Funktionsumfang und Messungen zwischen:
+
+- Weiterverwendung der Browser-Engine mit einer iOS-Hülle, beispielsweise Capacitor, lokal gebündelten Spielinhalten und echten Lebenszyklus-/Speicherintegrationen.
+- Einer begründeten Migration auf eine Spieleengine wie Godot, wenn Animationen, Werkzeuge, Leistung oder Umfang das klar rechtfertigen.
+
+Eine Browseradresse oder ZIP-Datei ist noch keine signierte, veröffentlichungsfähige iOS-App. Erkläre diesen Unterschied klar. Für den gewählten Weg müssen später ein echtes iOS-Projekt, ein reproduzierbarer Build, Signierung unter meinem Entwicklerkonto, Gerätetests und eine TestFlight-Version entstehen. Prüfe zu diesem Zeitpunkt aktuelle offizielle Anforderungen und Versionen. Behaupte keine iPhone-Tests, wenn lediglich ein Browser getestet wurde.
+
+Leistungsziele für spätere Geräteprüfungen: möglichst stabile 60 Bilder pro Sekunde, bei Bedarf ein guter 30-FPS-Modus; begrenzte Speicher- und Akkulast; keine Logiksprünge bei Zeitraffer; keine Simulation im Hintergrund. Prüfe insbesondere spätere Wellen, in denen die Last höher ist.
+
+9. Entwicklungsphasen mit klaren Ergebnissen
+
+Phase A · Spielbare Demo: Fraktionsauswahl, eine Karte, vier Rollen, Gegnerwellen, Gold, Upgrades, Boss, Tutorial, Pause, Tempo, lokale Checkpoints und Ergebnisbildschirm. Version 0.2 ergänzt eine neue Grafikgrundlage, Großansicht und Bastionsfeuer.
+
+Phase B · Mehr Spieltiefe: Auf Basis meines Spieltests zuerst die wichtigsten Schwächen beheben. Anschließend gezielt eigene Fraktionsfähigkeiten, Upgrade-Zweige, zusätzliche Karten/Biome, bessere Animationen und Gegnermechaniken entwickeln. Nicht alle Features gleichzeitig beginnen.
+
+Phase C · Mobile Beta: Vollständige Mobilansicht, Touch-Bedienung, native Integration, Speicher-/Lebenszyklusbehandlung, Offline-Spiel, echte Gerätetests und TestFlight. Ziel: eine zuverlässig spielbare iPhone-Version.
+
+Phase D · Veröffentlichung: App-Icon, echte Screenshots, Beschreibung, passende Altersfreigabe, Support- und Datenschutzinformationen, korrekte Angaben zur Datennutzung, Asset-/Lizenzverzeichnis, signierter Build und Einreichung über mein App-Store-Connect-Konto. Aktuelle Apple-Regeln erneut prüfen. Keine Annahme, dass eine einfache Web-Hülle automatisch zugelassen wird.
+
+Phase E · Erweiterungen: Kampagne, neue Karten und Fraktionen, optionale Helden, Herausforderungen, Erfolge und gegebenenfalls Monetarisierung. Erst anhand des fertigen Grundspiels priorisieren.
+
+10. Geschäftsmodell
+
+Die Demo enthält keine Werbung, Kaufmechanik oder Bezahlschranke. Monetarisierung erst später gemeinsam festlegen. Geeignete Varianten sind ein einmaliger Kaufpreis oder eine kostenlose Einführung mit zusätzlichen Karten beziehungsweise kosmetischen Inhalten. Baue nicht ungefragt Pay-to-win, Lootboxen, Zeitbarrieren, Tracking oder Abonnements ein. Kostenpflichtige Entwicklerdienste und externe Veröffentlichungen unter meinem Konto separat konkret vorbereiten und mit mir abstimmen.
+
+11. Qualität und Abnahme
+
+Teste bei jeder relevanten Änderung die betroffenen Spielregeln. Mindestens überprüfen:
+
+- Bau, Kosten, Upgrades, Verkauf und Schutz vor doppelter Belegung.
+- Tatsächliche Wirkung der Fraktionsboni und der vier Truppenrollen.
+- Gegnerpfad, korrekte Belohnungen und Lebensverlust bei Durchbruch.
+- Wellenende, Bosswellen und Niederlage ohne hängende Spielzustände.
+- Pause, Zeitraffer und Verhalten beim Hintergrundwechsel.
+- Speichern, Fortsetzen, Versionsprüfung und beschädigte Daten.
+- Große Wellen ohne unendliche Zahlen oder unkontrollierte Gegnerzahlen.
+- Sichtbare Bedienbarkeit auf Desktop und mobilen Bildschirmgrößen.
+
+Die aktuelle Grundlage enthält elf automatisierte Tests dieser Bereiche. Baue sie bei tatsächlichen neuen Risiken sinnvoll aus. Prüfe außerdem das sichtbare Spiel selbst; ein bestandener Logiktest ersetzt keine Kontrolle von Grafik und Bedienung. Berichte ehrlich, was getestet wurde und was offen ist.
+
+12. Zusammenarbeit und Lieferumfang jeder Version
+
+- Arbeite konkret bis zu einem benutzbaren Ergebnis; liefere nicht nur Vorschläge oder Codefragmente.
+- Stelle nur wenige entscheidende Fragen, wenn eine fehlende Information die Umsetzung stark verändern würde. Ansonsten triff nachvollziehbare Standardentscheidungen.
+- Bestehende gute Funktionen und meinen letzten bestätigten Stand erhalten. Fehler gezielt beheben.
+- Liefere eine direkt startbare Version oder einen funktionierenden Testlink, vollständigen Quellcode und eine kurze Anleitung.
+- Pflege Versionsnummer, kurze Änderungen, bekannte Grenzen und nächste sinnvolle Ausbauschritte. Kennzeichne geplante Funktionen als geplant.
+- Eine neue Funktion ist erst fertig, wenn sie im Spiel erreichbar ist und ihre Auswirkungen nachvollziehbar funktionieren.
+- Bewahre Arbeitsstand und Projektdateien so auf, dass wir später zuverlässig weiterarbeiten können. Nenne bei fehlendem Zugriff konkret die benötigte aktuelle Datei, statt Inhalte zu erfinden.
+
+Dein nächster Auftrag: Öffne und prüfe den beigelegten aktuellen Projektstand. Fasse den tatsächlich vorhandenen Umfang knapp zusammen. Setze dann meinen aktuellen Änderungswunsch um. Falls ich noch keinen neuen Wunsch genannt habe, priorisiere die drei größten Verbesserungen für Spielgefühl und mobile Bedienung und entwickle eine überschaubare nächste Version mit besonders hoher Grafikqualität. Am Ende möchte ich das Ergebnis selbst spielen können.
+
+
+
+Stand des mitgelieferten Projekts 0.2
+
+Umgesetzt: fünf Fraktionen mit wirksamen Boni; eine detailreiche Karte mit zwölf Bauplätzen; vier funktional verschiedene Truppenrollen mit Fraktionsnamen; Stufen I–V; Verkauf; vier Gegnertypen; generierte, zunehmend stärkere Wellen ohne festes Finale; Boss alle fünf Wellen; Einführung; Feldhandbuch; Pause und Zeitraffer; optionale automatische Wellen; lokale Checkpoints und Rekord; synthetisierte Toneffekte; responsive Browseransicht; Großansicht; Bastionsfeuer mit 40 Sekunden Abklingzeit in aktiver Kampfzeit; neue Charakterporträts und Figurenatlanten; elf automatisierte Simulationstests.
+
+Noch offen: native iOS-App und Signierung; echte iPhone-Tests; Produktionsbalancing über längere Läufe; zusätzliche Karten; einzigartige Fraktionsfähigkeiten und durchgehend unterschiedliche Fraktionsanimationen; Helden; Kampagne; Cloud-Sync; Veröffentlichung und Vermarktung. Die derzeitigen Truppen sterben nicht im Nahkampf: Nahkämpfer bremsen Gegner innerhalb ihrer Reichweite. Eine spätere Blockier-/Lebenspunkte-Mechanik ist ein Ausbau.
+
+Offizielle Referenzen für die spätere iOS-Phase
+
+Stand der Recherche: 22. Oktober 2026. Vor der Umsetzung erneut prüfen.
+
+- Apple App Review Guidelines, insbesondere 4.2 (Minimum Functionality) und 5.2 (Intellectual Property): https://developer.apple.com/app-store/review/guidelines/
+- Capacitor, iOS-Laufzeit und Xcode-Projekt: https://capacitorjs.com/docs/ios
+- Apple TestFlight: https://developer.apple.com/testflight/
+
+Apple verlangt eigenständigen Nutz- beziehungsweise Unterhaltungswert und Rechte an den verwendeten Inhalten. Die Capacitor-Dokumentation beschreibt den iOS-Build über Xcode. Daraus folgt keine Zulassungsgarantie für dieses Projekt.

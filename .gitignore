@@ -1,0 +1,17 @@
+# Generated single-file demo; reproduce with npm run offline.
+/Bastion_Demo_Offline.html
+
+# Local dependencies, test artifacts and editor files.
+node_modules/
+coverage/
+playwright-report/
+test-results/
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# Keep local credentials out of version control.
+.env
+.env.*
+!.env.example
